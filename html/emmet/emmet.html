@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+        태그 이름 + tab
+    -->
+    <div></div>
+
+    <!-- 
+
+    >
+    div>ul>li
+    <div>
+        <ul>
+            <li>
+            </li>
+        </ul>
+    </div>
+    -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- 
+
+    형제요소 +
+    div>h2+span
+    <div>
+        <h2></h2>
+        <span></span>
+    </div>
+    -->
+    <div>
+        <h2></h2>
+        <span></span>
+    </div>
+    <!-- 
+
+    ^
+
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+        <h2></h2>
+        <span></span>
+    </div>
+    -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+        <h2></h2>
+        <span></span>
+    </div>
+
+    <!-- 
+
+    div>ul>li*5
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    -->
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- 
+    <div>
+        <nav>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </nav>
+        <div></div>
+    </div>
+    div>(nav>ol>li*3)+div
+    -->
+    <div>
+        <nav>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </nav>
+        <div></div>
+    </div>
+
+    <!-- 
+    
+    class .
+
+    id #
+
+    div.mx-10
+    -->
+    <div class="mx-10"></div>
+
+    <!-- 
+    div.mb-10.mt-10
+    -->
+    <div class="mb-10 mt-10"></div>
+
+    <!-- 
+    .mx-10
+    -->
+    <div class="mx-10"></div>
+    
+    <!-- 
+    .mb-10.mt-10
+    -->
+    <div class="mb-10 mt-10"></div>
+
+    <span class="text-lg"></span>
+
+    <!-- span#font-lg -->
+    <span id="font-lg"></span>
+
+    <!-- 
+    #text-lg
+    -->
+    <div id="text-lg"></div>
+
+
+    <!-- 
+    a[href="https://google.com"]
+    -->
+    <a href="https://google.com"></a>
+
+    
+    <img src="https://picsum.photos/id/237/200/300" alt="">
+
+
+    <!-- 
+    ol>li*5
+    -->
+
+    <ol>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ol>
+
+    <!--
+    ol>li.item*5   
+     -->
+    <ol>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ol>
+
+    <!-- 
+    ol>li.item$*5 
+     -->
+    <ol>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ol>
+
+    <!-- 
+
+    ol>li.item$@10*5 
+
+    10 -> 15
+    -->
+    <ol>
+        <li class="item10"></li>
+        <li class="item11"></li>
+        <li class="item12"></li>
+        <li class="item13"></li>
+        <li class="item14"></li>
+    </ol>
+
+    <!-- 
+    <div class="box">
+        Hello World!
+    <div/>
+
+    .box{Hello World!}
+    -->
+    <div class="box">Hello World!</div>
+
+    <!-- 
+        <div class="container">
+            <ol>
+                <li class="item"><a href="#">아이템 1</a></li>
+                <li class="item"><a href="#">아이템 2</a></li>
+                <li class="item"><a href="#">아이템 3</a></li>
+                <li class="item"><a href="#">아이템 4</a></li>
+                <li class="item"><a href="#">아이템 5</a></li>
+            </ol>
+        </div>
+        .container>ol>li.item*5>a[href="#"]{아이템 $}
+    -->
+    <div class="container">
+        <ol>
+            <li class="item"><a href="#">아이템 1</a></li>
+            <li class="item"><a href="#">아이템 2</a></li>
+            <li class="item"><a href="#">아이템 3</a></li>
+            <li class="item"><a href="#">아이템 4</a></li>
+            <li class="item"><a href="#">아이템 5</a></li>
+        </ol>
+    </div>
+
+    <!-- 
+    <div class="list-container">
+        <div class="item">12345678910</div>
+    </div>
+    .list-container>.item>{$}*10
+    -->
+    <div class="list-container">
+        <div class="item">
+            1
+            2
+            3
+            4
+            5
+            6
+            7
+            8
+            9
+            10
+        </div>
+    </div>
+
+    <!-- 
+    <div class="list-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+    .list-container>.item*10>{$}
+    -->
+    <div class="list-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+
+</body>
+</html>

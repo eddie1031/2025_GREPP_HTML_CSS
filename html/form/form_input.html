@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+
+        <label for="name">이름 : </label>
+        <input type="text" id="name" name="name" placeholder="이름을 입력하세요!" readonly>
+
+        <br><br>
+
+        <label for="email">
+            이메일 : 
+        </label>
+        <input type="email" name="email" id="email" placeholder="이메일 주소" required>
+
+        <br><br>
+
+        <label for="password">
+            비밀번호 : 
+        </label>
+        <input type="password" name="password" id="password" placeholder="비밀번호" required>
+
+        <br><br>
+
+        <label for="phone">
+            전화번호 : 
+        </label>
+        <input type="tel" name="phone" id="phone" placeholder="010-1234-1234" required>
+
+        <br><br>
+
+        <label for="dob">
+            생년월일 : 
+        </label>
+        <input type="date" name="dob" id="dob" required>
+
+        <br><br>
+
+        <label for="meeting-time">
+            미팅 시간 : 
+        </label>
+        <input type="time" name="meeting-time" id="meeting-time" required>
+
+        <br><br>
+
+        <label for="quantity">
+            구매 수량 : 
+        </label>
+        <input type="number" name="quantity" id="quantity" min="1" max="100" required>
+
+        <br><br>
+
+        <label for="profile">
+            프로필 사진 : 
+        </label>
+        <input type="file" name="profile" id="profile">
+
+        <br><br>
+
+        <label for="color">
+            좋아하는 색상 : 
+        </label>
+        <input type="color" name="color" id="color">
+
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="terms" readonly> 약관에 동의합니다.    
+        </label>
+
+        <br><br>
+
+        <div>
+            <p>
+                성별
+            </p>
+            <label>
+                남성
+                <input type="radio" name="gender" value="male" readonly>
+            </label>
+            <label>
+                여성
+                <input type="radio" name="gender" value="female" readonly>
+            </label>
+        </div>
+
+
+        <input type="hidden" name="userId" value="12345">
+
+
+        <div>
+            <button>
+                제출
+            </button>
+        </div>
+
+    </form>
+</body>
+</html>
