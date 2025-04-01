@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자와 관련된 CSS</title>
+    <style>
+
+        @font-face {
+            font-family: 'CookieRun-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .font-applied {
+            font-family: 'CookieRun-Regular', sans-serif;
+        }
+
+        .i {
+            font-style: italic;
+        }
+
+        /* 
+        font-weight
+
+        100 lighter
+        400 normal
+        700 bold
+        900 bolder
+        */
+        .font-bold {
+            font-weight: 700;
+        }
+
+        /* 
+        font-size
+        */
+        .text-3xl {
+            font-size: 30px;
+        }
+
+        
+        /*
+        text-align
+        텍스트의 정렬 방향 
+         */
+        .text-center {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+
+        <p>
+            Lorem <span class="i">ipsum</span> <span class="font-bold text-3xl">dolor sit</span> amet.
+        </p>
+
+        <p class="font-applied">
+            Lorem ipsum dolor sit amet.
+        </p>
+
+        <div class="text-center">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+    </div>
+</body>
+</html>
